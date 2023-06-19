@@ -7,18 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD6B893A2A40953F007B677D /* UISliderRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6B89392A40953F007B677D /* UISliderRepresentation.swift */; };
 		FDE59B502A4005CB003E8855 /* CloserNumberApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE59B4F2A4005CB003E8855 /* CloserNumberApp.swift */; };
-		FDE59B522A4005CB003E8855 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE59B512A4005CB003E8855 /* ContentView.swift */; };
 		FDE59B542A4005CC003E8855 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDE59B532A4005CC003E8855 /* Assets.xcassets */; };
 		FDE59B572A4005CC003E8855 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDE59B562A4005CC003E8855 /* Preview Assets.xcassets */; };
+		FDE59B5E2A4005DE003E8855 /* SliderContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE59B5D2A4005DE003E8855 /* SliderContentView.swift */; };
+		FDE59B602A4064F1003E8855 /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE59B5F2A4064F0003E8855 /* CustomSlider.swift */; };
+		FDE59B622A407B03003E8855 /* SliderGameSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE59B612A407B03003E8855 /* SliderGameSettings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FD6B89392A40953F007B677D /* UISliderRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISliderRepresentation.swift; sourceTree = "<group>"; };
 		FDE59B4C2A4005CB003E8855 /* CloserNumber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloserNumber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDE59B4F2A4005CB003E8855 /* CloserNumberApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloserNumberApp.swift; sourceTree = "<group>"; };
-		FDE59B512A4005CB003E8855 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FDE59B532A4005CC003E8855 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDE59B562A4005CC003E8855 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FDE59B5D2A4005DE003E8855 /* SliderContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderContentView.swift; sourceTree = "<group>"; };
+		FDE59B5F2A4064F0003E8855 /* CustomSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
+		FDE59B612A407B03003E8855 /* SliderGameSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderGameSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +57,13 @@
 		FDE59B4E2A4005CB003E8855 /* CloserNumber */ = {
 			isa = PBXGroup;
 			children = (
+				FDE59B5D2A4005DE003E8855 /* SliderContentView.swift */,
+				FD6B89392A40953F007B677D /* UISliderRepresentation.swift */,
+				FDE59B612A407B03003E8855 /* SliderGameSettings.swift */,
 				FDE59B4F2A4005CB003E8855 /* CloserNumberApp.swift */,
-				FDE59B512A4005CB003E8855 /* ContentView.swift */,
 				FDE59B532A4005CC003E8855 /* Assets.xcassets */,
 				FDE59B552A4005CC003E8855 /* Preview Content */,
+				FDE59B5F2A4064F0003E8855 /* CustomSlider.swift */,
 			);
 			path = CloserNumber;
 			sourceTree = "<group>";
@@ -137,8 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDE59B522A4005CB003E8855 /* ContentView.swift in Sources */,
+				FDE59B5E2A4005DE003E8855 /* SliderContentView.swift in Sources */,
+				FD6B893A2A40953F007B677D /* UISliderRepresentation.swift in Sources */,
+				FDE59B622A407B03003E8855 /* SliderGameSettings.swift in Sources */,
 				FDE59B502A4005CB003E8855 /* CloserNumberApp.swift in Sources */,
+				FDE59B602A4064F1003E8855 /* CustomSlider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
