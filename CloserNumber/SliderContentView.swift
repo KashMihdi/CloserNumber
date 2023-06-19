@@ -13,7 +13,7 @@ struct SliderContentView: View {
     
     var body: some View {
         VStack(spacing: 26) {
-            Text("Move the slider as close as possible to \(logic.gameValue)")
+            Text("Move slider as close as possible to \(logic.gameValue)")
 
             HStack(spacing: 16) {
                 Text("0").font(.title3)
