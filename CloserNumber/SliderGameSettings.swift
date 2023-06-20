@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class SliderGame: ObservableObject {
+final class SliderGameSettings: ObservableObject {
     @Published var userValue = 0.0
     var gameValue = Int.random(in: 1...100)
     

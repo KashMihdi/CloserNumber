@@ -8,19 +8,19 @@
 import SwiftUI
 
 struct SliderContentView: View {
-    @StateObject private var logic =  SliderGame()
+    @StateObject private var setting =  SliderGameSettings()
     @State private var isPresented = false
     
     var body: some View {
         VStack(spacing: 26) {
-            Text("Move slider as close as possible to \(logic.gameValue)")
+            Text("Move slider as close as possible to \(setting.gameValue)")
 
             HStack(spacing: 16) {
                 Text("0").font(.title3)
                 
                 UISliderRepresentation(
-                    value: $logic.userValue,
-                    opacity: logic.opacity
+                    value: $setting.userValue,
+                    opacity: setting.opacity
                 )
                 
                 Text("100").font(.title3)
@@ -28,11 +28,11 @@ struct SliderContentView: View {
             .padding(.horizontal, 10)
             
             Button("Check result") { isPresented.toggle() }
-            .alert("Excellent", isPresented: $isPresented, actions: {}) {
-                Text("Your score: \(logic.computerScore())")
-            }
+                .alert("Excellent", isPresented: $isPresented, actions: {}) {
+                    Text("Your score: \(setting.computerScore())")
+                }
         
-            Button("Start over", action: logic.reset)
+            Button("Start over", action: setting.reset)
         }
     }
 }

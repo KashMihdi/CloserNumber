@@ -15,10 +15,10 @@ struct UISliderRepresentation: UIViewRepresentable {
     func makeUIView(context: Context) -> UISlider {
         let slider = UISlider()
         slider.maximumValue = 100
-        slider.minimumTrackTintColor = .red
+        slider.minimumTrackTintColor = .blue
         slider.addTarget(
             context.coordinator,
-            action: #selector(Coordinator.didEditing),
+            action: #selector(Coordinator.valueDidChange),
             for: .valueChanged
         )
         return slider
@@ -30,7 +30,7 @@ struct UISliderRepresentation: UIViewRepresentable {
             red: 1,
             green: 0,
             blue: 0,
-            alpha: CGFloat(opacity * 0.9)
+            alpha: opacity
         )
     }
     
@@ -48,7 +48,7 @@ extension UISliderRepresentation {
             self._value = value
         }
 
-        @objc func didEditing(_ sender: UISlider) {
+        @objc func valueDidChange(_ sender: UISlider) {
             value = Double(sender.value)
         }
     }
